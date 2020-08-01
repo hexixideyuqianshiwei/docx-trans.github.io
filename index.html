@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>File Server</title>
+</head>
+<body>
+	<form action="/cgi-bin/download.py" method="get">
+		要下载的文件: <input type="text" name="filename" />
+		<input type="submit" value="download">
+	</form>
+
+	<form enctype="multipart/form-data" action="/cgi-bin/upload.py" method="post">
+		要上传的文件: <input type="file" name="filename" /> 
+		<input type="submit" value="upload">
+	</form>
+</body>
+</html>
